@@ -1,0 +1,24 @@
+    /*Comienzan Media Queries*/
+    /*Medida p/smartphone*/
+    /*@media (min-width: 576px) {
+        .img-fluid {
+        width: 30%;
+        }
+    }  
+    /*Medida para RWD en tabletas*/
+    /*@media (min-width: 768px) {
+        .img-fluid {
+        width: 50%;
+        }
+        /*Medida para RWD en laps o desktop mediano*/
+    /*@media (min-width: 992px) {
+        .img-fluid {
+        width: 25%;
+        }
+    }
+    /*Medida para RWD en laps grandes*/
+    /*@media (min-width: 1200px) {
+        .img-fluid {
+        width: 25%;
+        }
+    }*/

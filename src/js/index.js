@@ -1,1 +1,1 @@
-alert('Ya está enlazado');
+// alert('Ya está enlazado');
