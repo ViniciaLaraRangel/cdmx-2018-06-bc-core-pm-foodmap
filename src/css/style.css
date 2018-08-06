@@ -1,3 +1,6 @@
+/*body {
+}*/
+
 .img-fluid-logo {
     width: 30%;
     }
@@ -27,3 +30,15 @@
     align-content: center;
     border: solid 1px #AEB3AB;
 }*/
+
+.img-fluid-places {
+    width: auto;
+}
+
+.fa-map-marked-alt {
+    color: aliceblue;
+}
+
+.restaurant-type {
+    background-color: #AEB3AB;
+}
