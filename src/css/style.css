@@ -1,4 +1,15 @@
 .img-fluid-logo {
-    width: 70%;
-    text-align: center;
+    width: 30%;
+    }
+
+.search-icon {
+    color: aliceblue;
+}
+
+.centrar-Gif {
+    height: 100vh;
+}
+
+.btn-color {
+    background-color: blueviolet;
 }
