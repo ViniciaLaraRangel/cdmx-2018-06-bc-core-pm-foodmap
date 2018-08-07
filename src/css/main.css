@@ -14,12 +14,12 @@
         /*Medida para RWD en laps o desktop mediano*/
     @media (min-width: 769px) /*and (max-width: 992px)*/ {
         .img-fluid-logo {
-        width: 50%;
+        width: 30%;
         }
     }
     /*Medida para RWD en laps grandes*/
     @media (min-width: 770px) /*and (max-width: 1200px)*/ {
         .img-fluid-logo {
-        width: 60%;
+        width: 30%;
         }
     }

@@ -1,6 +1,9 @@
 document.getElementById('places-searching').addEventListener('click', event => {
   event.preventDefault();
-  let restauranteName = document.getElementById('').value;
-  let restaurantType = document.getElementById('').value;
-  FilterPlacesSearching(restaurantType, restauranteName);
+  let restauranteName = document.getElementById('restauranteName').value;
+  if (restauranteName !== '' && restauranteName !== ' ') {
+    FilterPlacesSearching(restauranteName);
+  };
 });
+
+/* let restaurantType = document.getElementById('').value;*/
