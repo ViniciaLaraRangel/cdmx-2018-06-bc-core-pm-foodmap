@@ -19,10 +19,10 @@
     width: 60%;
 }
 
-/*.caja-imagen {
-    align-content: center;
+.caja-imagen {
+    width: 75%;
     border: solid 1px #AEB3AB;
-}*/
+}
 
 .img-fluid-places {
     width: auto;

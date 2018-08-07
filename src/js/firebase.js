@@ -57,7 +57,7 @@ window.FilterPlacesSearching = (restauranteName) => {
                   </div>
               </div>
           </div>`;
-          document.getElementById('places-searching').innerHTML = filterPlaceByName;
+          document.getElementById('printCardAllPlaces').innerHTML = filterPlaceByName;
         } else {
           // alert('No se encontraron coincidencias');
           console.log('NOOOO');
