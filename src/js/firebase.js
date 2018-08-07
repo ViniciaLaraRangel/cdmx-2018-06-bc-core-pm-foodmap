@@ -1,11 +1,21 @@
-// Initialize Firebase
-let config = {
+// Initialize Firebase- API KEY COLABORATIVA AFFAMATO
+/* let config = {
   apiKey: 'AIzaSyCiLDBi-b0s3qQ7StQwIpepNwyEX65LHyo',
   authDomain: 'affamato-project.firebaseapp.com',
   databaseURL: 'https://affamato-project.firebaseio.com',
   projectId: 'affamato-project',
   storageBucket: 'affamato-project.appspot.com',
   messagingSenderId: '371498322149'
+};*/
+
+// Initialize Firebase- API KEY BASE DE DATOS PRUEBA EMERGENCIA
+var config = {
+  apiKey: 'AIzaSyDTnRlgj3YITuH0fTWO7Qv_Cg8aCXBWH80',
+  authDomain: 'food-map-2.firebaseapp.com',
+  databaseURL: 'https://food-map-2.firebaseio.com',
+  projectId: 'food-map-2',
+  storageBucket: '',
+  messagingSenderId: '330495915253'
 };
 firebase.initializeApp(config);
 
@@ -84,7 +94,7 @@ window.obtainRestaurantPlaces = () => {
       result.forEach(allPlaces => {
         // console.log(allPlaces.data().name);
         let rankingPlaces = printRatingAllPlaces(allPlaces.data().rate);
-        resultAllPlaces += `<div class="col-sm-5 my-2 mx-2">
+        resultAllPlaces += `<div class="col-sm-4 my-1 mx-1">
         <div class="card ">
             <div class="box">
                 <div class="img">
