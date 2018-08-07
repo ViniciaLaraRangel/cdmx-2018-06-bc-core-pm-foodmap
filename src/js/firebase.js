@@ -11,13 +11,47 @@ firebase.initializeApp(config);
 
 let db = firebase.firestore();
 
-window.obtainRestaurantPlaces = () => {
-  resultAllPlaces = '';
-  db.collection('places').orderBy('rate', 'asc').get()
+window.FilterPlacesSearching = (restaurantType, restauranteName) => {
+  filterPlaceByName = '';
+  db.collection('places').orderBy('name', 'type').get()
     .then(result => {
-      result.forEach(allPlaces => {
-        // console.log(allPlaces.data().name);
-        result += `<div class="col-sm-5 my-2 mx-2">
+      result.forEach(allTypes => {
+        console.log(allPlaces.data().type);
+      });
+      return filterPlaceByName;
+    });
+  /* if (restaurantType === '')
+}*/
+
+  window.printRatingAllPlaces = (printRanking) => {
+    starRate = '';
+    if (printRanking === 'Excelente') {
+      starRate += `<i class="fa fa-star"></i>
+    <i class="fa fa-star"></i> 
+    <i class="fa fa-star"></i> 
+    <i class="fa fa-star"></i> 
+    <i class="fa fa-star"></i>`;
+    } if (printRanking === 'Bueno') {
+      starRate += `<i class="fa fa-star"></i>
+    <i class="fa fa-star"></i> 
+    <i class="fa fa-star"></i> 
+    <i class="fa fa-star"></i>`;
+    } else {
+      starRate += `<i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>`;
+    }
+    return starRate;
+  };
+
+
+  window.obtainRestaurantPlaces = () => {
+    resultAllPlaces = '';
+    db.collection('places').orderBy('rate', 'asc').get()
+      .then(result => {
+        result.forEach(allPlaces => {
+          // console.log(allPlaces.data().name);
+          let rankingPlaces = printRatingAllPlaces(allPlaces.data().rate);
+          resultAllPlaces += `<div class="col-sm-5 my-2 mx-2">
         <div class="card ">
             <div class="box">
                 <div class="img">
@@ -25,14 +59,10 @@ window.obtainRestaurantPlaces = () => {
                 </div>
                 <h2>${allPlaces.data().name}
                     <br>
-                    <span class="restaurant-type">Tipo de comida</span>
+                    <span class="restaurant-type">${allPlaces.data().type}</span>
                 </h2>
                 <p>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i> 
-                    <i class="fa fa-star"></i> 
-                    <i class="fa fa-star"></i> 
-                    <i class="fa fa-star"></i>     
+                ${rankingPlaces}
                 </p>
                 <span>
                     <ul>
@@ -46,9 +76,9 @@ window.obtainRestaurantPlaces = () => {
             </div>
         </div>
     </div>`;
-        document.getElementById('printCardAllPlaces').innerHTML = result;
+          document.getElementById('printCardAllPlaces').innerHTML = resultAllPlaces;
+        });
       });
-    });
+  };
+  obtainRestaurantPlaces();
 };
-
-obtainRestaurantPlaces();
