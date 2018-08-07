@@ -1,24 +1,24 @@
     /*Comienzan Media Queries
     /*Medida p/smartphone*/
-    @media (min-width: 0px) and (max-width: 576px) {
+    @media (min-width: 0px) /*and (max-width: 576px)*/ {
         .img-fluid-logo {
-        width: 40%;
+        width: 45%;
         }
     }  
     /*Medida para RWD en tabletas*/
-    @media (min-width: 577px) and (max-width: 768px) {
+    @media (min-width: 577px) /*and (max-width: 768px)*/ {
         .img-fluid-logo {
         width: 40%;
         }
     }
         /*Medida para RWD en laps o desktop mediano*/
-    @media (min-width: 769px) and (max-width: 992px) {
+    @media (min-width: 769px) /*and (max-width: 992px)*/ {
         .img-fluid-logo {
-        width: 30%;
+        width: 35%;
         }
     }
     /*Medida para RWD en laps grandes*/
-    @media (min-width: 770px) and (max-width: 1200px) {
+    @media (min-width: 770px) /*and (max-width: 1200px)*/ {
         .img-fluid-logo {
         width: 30%;
         }

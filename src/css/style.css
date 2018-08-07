@@ -1,25 +1,18 @@
-/*body {
-}*/
-
 .img-fluid-logo {
-    width: 30%;
+    width: 20%;
     }
 
 .search-icon {
     color: aliceblue;
 }
 
+/*Para centrar gif p/splash*/
 .centrar-Gif {
     height: 100vh;
 }
 
 .btn-color {
     background-color: blueviolet;
-}
-
-.mapa-imagen {
-    align-content: center;
-    border: solid 1px #AEB3AB;
 }
 
 .img-fluid-texto-transicion {
@@ -42,3 +35,4 @@
 .restaurant-type {
     background-color: #AEB3AB;
 }
+

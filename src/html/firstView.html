@@ -4,7 +4,7 @@
 <head>
     <title>FoodMap</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--Agregando bootstrap 4-->
@@ -33,30 +33,30 @@
         </div>
         <hr>
         <!--Fila para mapa-->
-        <div class="row">
-            <div class=" offset-sm-1 col-sm-10 mapa-imagen">
-                <img src="../css/Images/capturaMapsViniciasHouse.png" alt="Mapa cercano a Vinica´s house" class="img-fluid ">
-            </div>
+        <div class=" offset-sm-1 offset-md-1 offset-lg-1 col-sm-10 mapa-imagen">
+            <img src="../css/Images/capturaMapsViniciasHouse.png" alt="Mapa cercano a Vinica´s house" class="img-fluid caja-imagen">
         </div>
-        <div class="row">
-            <div class="col-sm-12 text-center mt-4">
-                <img src="../css/Images/texto-transicion.PNG" alt="¿Qué tipo de lugar estás buscando" class="img-fluid img-fluid-texto-transicion">
-            </div>
-        </div>
+    </div>
+    <div class="col-sm-12 text-center mt-4">
+        <img src="../css/Images/texto-transicion.PNG" alt="¿Qué tipo de lugar estás buscando" class="img-fluid img-fluid-texto-transicion">
+    </div>
+    </div>
 
-        <!--Input y botón de búsqueda-->
-        <div class="col-sm-12 text-center mt-4">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Buscar" id="restauranteName">
-                <div class="input-group-append">
-                    <button class="btn btn-color" type="button" id="places-searching">
-                        <i class="fa fa-search search-icon"></i>
-                    </button>
-                </div>
+    <!--Input y botón de búsqueda-->
+    <div class="col-sm-12 text-center mt-4">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar" id="restauranteName">
+            <div class="input-group-append">
+                <button class="btn btn-color" type="button" id="places-searching">
+                    <i class="fa fa-search search-icon"></i>
+                </button>
             </div>
         </div>
-        <hr>
-        <!--Comienza card para info de los lugares, imprime dinámicamente-->
+    </div>
+    <hr>
+    </div>
+    <!--Comienza card para info de los lugares, imprime dinámicamente-->
+    <div class="container">
         <div class="row" id="printCardAllPlaces">
         </div>
     </div>
@@ -78,7 +78,7 @@
     <script src="../js/index.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/firebase.js"></script>
-    
+
 </body>
 
 </html>

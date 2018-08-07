@@ -94,7 +94,7 @@ window.obtainRestaurantPlaces = () => {
       result.forEach(allPlaces => {
         // console.log(allPlaces.data().name);
         let rankingPlaces = printRatingAllPlaces(allPlaces.data().rate);
-        resultAllPlaces += `<div class="col-sm-4 my-1 mx-1">
+        resultAllPlaces += `<div class="col-12 col-sm-12 col-md-6 col-lg-4">
         <div class="card ">
             <div class="box">
                 <div class="img">
